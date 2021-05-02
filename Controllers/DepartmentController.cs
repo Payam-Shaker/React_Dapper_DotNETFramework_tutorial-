@@ -46,7 +46,7 @@ namespace WebAPI.Controllers
               ";
 
                 using (var con = new SqlConnection(ConfigurationManager.ConnectionStrings["EmployeeDB"].ConnectionString))
-                using (var cmd = new SqlCommand(query, con))
+                using (var cmd = new SqlCommand(query, con))  
                 using (var da = new SqlDataAdapter(cmd))
                 {
                     cmd.CommandType = CommandType.Text;
